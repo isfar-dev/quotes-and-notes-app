@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginVertical="@dimen/_4sdp"
+    android:layout_marginHorizontal="@dimen/_8sdp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+<!--========= Quote Area =================-->
+        <LinearLayout
+            android:id="@+id/bgLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/lite_green"
+            android:padding="@dimen/_15sdp"
+            >
+
+    <TextView
+        android:id="@+id/quote_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quote Text"
+        android:textSize="@dimen/_16ssp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:gravity="center"
+        android:fontFamily="@font/roboto_regular"
+        />
+
+    <TextView
+        android:id="@+id/quote_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Author"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:gravity="center"
+        android:fontFamily="@font/roboto_italic"
+        />
+
+        </LinearLayout>
+<!--========= Quote Area ==================-->
+
+<!--======== Button Area ==============-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_below="@+id/bgLinearLayout"
+        >
+
+   <!--=========== Share Button =================-->
+        <LinearLayout
+            android:id="@+id/btn_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_margin="@dimen/_3sdp"
+            android:paddingVertical="@dimen/_4sdp"
+            >
+
+        <ImageView
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_23sdp"
+            android:src="@drawable/share"
+            android:contentDescription="Share"
+            android:paddingRight="@dimen/_3sdp"
+            app:tint="@color/black"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboto_regular"
+                />
+
+        </LinearLayout>
+    <!--=========== Share Button =================-->
+
+
+    <!--=========== Copy Button =================-->
+        <LinearLayout
+            android:id="@+id/btn_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_margin="@dimen/_3sdp"
+            android:paddingVertical="@dimen/_4sdp"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/_23sdp"
+                android:layout_height="@dimen/_23sdp"
+                android:src="@drawable/copy"
+                android:contentDescription="Copy"
+                android:paddingRight="@dimen/_3sdp"
+                app:tint="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copy"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboto_regular"
+                />
+
+        </LinearLayout>
+    <!--=========== Copy Button =================-->
+
+
+    <!--=========== Save Button =================-->
+        <LinearLayout
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_margin="@dimen/_3sdp"
+            android:paddingVertical="@dimen/_4sdp"
+            >
+
+            <ImageView
+                android:id="@+id/imageSave"
+                android:layout_width="@dimen/_23sdp"
+                android:layout_height="@dimen/_23sdp"
+                android:contentDescription="Save"
+                android:src="@drawable/save"
+                android:paddingRight="@dimen/_3sdp"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/tvSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboto_regular"
+                />
+
+        </LinearLayout>
+    <!--=========== Save Button =================-->
+
+    </LinearLayout>
+<!--======== Button Area ==============-->
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

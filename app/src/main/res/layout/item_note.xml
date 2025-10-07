@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_notes"
+    android:layout_marginVertical="@dimen/_4sdp"
+    android:layout_marginHorizontal="@dimen/_6sdp"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    >
+
+    <TextView
+        android:id="@+id/noteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sample Note"
+        android:textSize="@dimen/_13ssp"
+        android:fontFamily="@font/roboto_regular"
+        android:paddingVertical="@dimen/_12sdp"
+        android:paddingHorizontal="@dimen/_15sdp"
+        />
+
+</LinearLayout>

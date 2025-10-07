@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".notesection.NotesFragment"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/tv_no_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="No saved notes yet!"
+        android:textSize="@dimen/_16ssp"
+        android:visibility="gone" />
+
+
+    <!-- RecyclerView for displaying saved notes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:layout_marginBottom="@dimen/_5sdp"
+        />
+
+
+    <!-- Option FAB: I have to... -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabIHaveTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/_115sdp"
+        android:layout_marginRight="@dimen/_14sdp"
+        android:backgroundTint="@color/green"
+        android:text="I have to..."
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/white"
+        app:icon="@drawable/add"
+        app:iconGravity="end"
+        app:iconTint="@color/white"
+        />
+
+
+    <!-- Option FAB: I can... -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabICan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/_65sdp"
+        android:layout_marginRight="@dimen/_14sdp"
+        android:backgroundTint="@color/green"
+        android:text="I can..."
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/white"
+        app:icon="@drawable/add"
+        app:iconGravity="end"
+        app:iconTint="@color/white"
+        />
+
+    <!-- Main FAB -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/mainFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_14sdp"
+        android:src="@drawable/main_add"
+        android:contentDescription="Add Note"
+        android:tint="@android:color/black"
+        android:backgroundTint="@color/green"
+        />
+
+
+</RelativeLayout>

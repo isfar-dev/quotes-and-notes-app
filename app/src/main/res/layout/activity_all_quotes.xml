@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_all_quotes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AllQuotesActivity"
+    android:background="@color/white">
+
+
+    <!-- Ad Container -->
+    <LinearLayout
+        android:id="@+id/ad_container_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/_5sdp"
+        />
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/quotes_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_46sdp"
+        android:background="@color/white"
+        app:title="Quotes"
+        app:titleCentered="true"
+        app:navigationIcon="@drawable/back_arrow"
+        app:titleTextAppearance="@style/RobotoTextViewStyle"
+        android:layout_below="@+id/ad_container_linear"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@drawable/shadow"
+        android:layout_below="@+id/quotes_toolbar"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/all_quotes_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/quotes_toolbar"
+        />
+
+</RelativeLayout>

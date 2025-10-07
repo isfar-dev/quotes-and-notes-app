@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MoreFragment"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <!-- Rate App -->
+    <TextView
+        android:id="@+id/tv_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rate App"
+        android:textSize="@dimen/_16ssp"
+        android:fontFamily="@font/robotocondensed_regular"
+        android:textColor="@color/black"
+        android:padding="@dimen/_10sdp"
+        android:drawableStart="@drawable/rate"
+        android:drawablePadding="@dimen/_20sdp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#CDCACACA"
+        />
+
+    <!-- Share App -->
+    <TextView
+        android:id="@+id/tv_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share App"
+        android:textSize="@dimen/_16ssp"
+        android:fontFamily="@font/robotocondensed_regular"
+        android:textColor="@color/black"
+        android:padding="@dimen/_10sdp"
+        android:drawableStart="@drawable/share_2"
+        android:drawablePadding="@dimen/_20sdp"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#CDCACACA"
+        />
+
+    <!-- Contact -->
+    <TextView
+        android:id="@+id/tv_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact"
+        android:textSize="@dimen/_16ssp"
+        android:fontFamily="@font/robotocondensed_regular"
+        android:textColor="@color/black"
+        android:padding="@dimen/_10sdp"
+        android:drawableStart="@drawable/contact"
+        android:drawablePadding="@dimen/_20sdp"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#CDCACACA"
+        />
+
+    <!-- Privacy Policy-->
+    <TextView
+        android:id="@+id/tv_privacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Privacy Policy"
+        android:textSize="@dimen/_16ssp"
+        android:fontFamily="@font/robotocondensed_regular"
+        android:textColor="@color/black"
+        android:padding="@dimen/_10sdp"
+        android:drawableStart="@drawable/policy"
+        android:drawablePadding="@dimen/_20sdp"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#CDCACACA"
+        />
+
+    <!-- About-->
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:textSize="@dimen/_16ssp"
+        android:fontFamily="@font/robotocondensed_regular"
+        android:textColor="@color/black"
+        android:padding="@dimen/_10sdp"
+        android:drawableStart="@drawable/about"
+        android:drawablePadding="@dimen/_20sdp"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#CDCACACA"
+        />
+
+
+</LinearLayout>

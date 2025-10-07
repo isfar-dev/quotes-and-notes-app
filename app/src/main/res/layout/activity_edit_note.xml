@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edit_note_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notesection.EditNoteActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            android:background="@color/white"
+            >
+
+
+            <!-- EditText for user input -->
+            <EditText
+                android:id="@+id/noteEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Write something..."
+                android:gravity="top"
+                android:minHeight="200dp"
+                android:padding="@dimen/_16sdp"
+                android:background="@color/white"
+                android:inputType="textMultiLine"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/black"
+                android:scrollbars="vertical"
+                android:overScrollMode="ifContentScrolls"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                />
+
+        </ScrollView>
+
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:text="Save"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_16ssp"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginVertical="@dimen/_10sdp"
+            />
+
+</LinearLayout>

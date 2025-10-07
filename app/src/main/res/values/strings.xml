@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Quotes, Status &amp; Notes</string>
+
+    <string name="nav_open">Open Nav</string>
+    <string name="nav_close">Close Nav</string>
+
+    <!--==== App Version Name... ============================= -->
+    <string name="app_version_name">Version: 1.2</string>
+
+    <!--==== AdMob Ads... =================================== -->
+    <string name="ADMOB_APP_ID">ca-app-pub-3940256099942544~3347511713</string>
+
+    <string name="INTERSTITIAL_AD_UNIT_ID">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="BANNER_AD_UNIT_ID">ca-app-pub-3940256099942544/9214589741</string>
+
+    <string name="FIXED_BANNER_AD_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+
+
+</resources>

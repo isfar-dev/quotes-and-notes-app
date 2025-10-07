@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity"
+    android:background="@color/white"
+    android:id="@+id/main"
+    >
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:openDrawer="start"
+        >
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <!--======== Toolbar ==============-->
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_46sdp"
+                android:background="@color/white"
+                app:navigationIcon="@drawable/menu"
+                app:navigationIconTint="@color/black"
+                app:title="Home"
+                app:menu="@menu/header_menu"
+                app:titleCentered="true"
+                app:titleTextColor="@android:color/black"
+                app:titleTextAppearance="@style/RobotoTextViewStyle"
+                android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+                app:popupTheme="@style/Theme.AppCompat.Light"
+                />
+        </com.google.android.material.appbar.AppBarLayout>
+        <!--======== Toolbar ==============-->
+
+        <!--======== Toolbar Shadow ====-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#E2E1E1E1"
+            android:layout_marginTop="@dimen/_46sdp"
+            />
+
+        <!-- Main Content Area -->
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_47sdp"
+            android:layout_marginBottom="@dimen/_85sdp"
+            />
+
+        <!--==== BottomNavigationView Shadow ====-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/shadow"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/_85sdp"
+            />
+
+        <!-- Bottom Navigation View -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_85sdp"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            app:menu="@menu/bottom_nav_menu"
+            app:labelVisibilityMode="labeled"
+            app:itemRippleColor="@null"
+            app:itemBackground="@android:color/transparent"
+            app:itemHorizontalTranslationEnabled="false"
+            app:itemIconTint="@drawable/item_selector"
+            app:itemTextColor="@drawable/item_selector"
+            app:itemIconSize="@dimen/_22sdp"
+            app:itemPaddingTop="@dimen/_6sdp"
+            app:itemPaddingBottom="@dimen/_10sdp"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <!--====== Main Design End ===========-->
+
+
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu"
+        app:headerLayout="@layout/nav_header"
+        app:itemIconTint="@color/black"
+        />
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.AboutActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linear_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <!-- Ad Container -->
+        <LinearLayout
+            android:id="@+id/ad_container_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:orientation="vertical" />
+
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/about_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_46sdp"
+            android:background="@color/white"
+            app:navigationIcon="@drawable/back_arrow"
+            app:title="About"
+            app:titleCentered="true"
+            app:titleTextAppearance="@style/RobotoTextViewStyle" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@drawable/shadow" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/robotocondensed_medium"
+            android:text="@string/app_name"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/robotocondensed_regular"
+            android:text="@string/app_version_name"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/robotocondensed_regular"
+            android:text="Quotes &amp; Notes is your ultimate hub for inspiration and self-reflection. It offers carefully curated quotes from diverse authors across 30+ categories, including Motivation, Gratitude, Leadership, and more. With features like saving favorites, creating personal notes, and sharing quotes with loved ones, staying inspired has never been easier.
+You can also enjoy sharing these inspiring quotes directly to your social media spread positivity with a single tap and explore a user-friendly design that makes navigation a breeze. Whether you need a daily dose of positivity or words to fuel your personal growth, Quotes &amp; Notes is here to empower and uplift you every step of the way!"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp" />
+
+
+    </LinearLayout>
+
+</ScrollView>
